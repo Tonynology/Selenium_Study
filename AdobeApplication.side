@@ -1,0 +1,169 @@
+{
+  "id": "60d18cad-a78a-405b-a32e-483d09ffac37",
+  "version": "2.0",
+  "name": "AdobeApplication",
+  "url": "https://www.adobe.com",
+  "tests": [{
+    "id": "9194e3a7-8b68-49a8-bb5f-5b96e01c9a6d",
+    "name": "TC_1",
+    "commands": [{
+      "id": "6a0dc348-3799-4d8d-b4db-0b2b25a4e2a1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ff3b8bb-5d50-4f5a-9fff-9db709716051",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1379x934",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63e0d818-5321-4416-9966-956afb69c7e1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=gnav_746",
+      "targets": [
+        ["id=gnav_746", "id"],
+        ["css=#gnav_746", "css:finder"],
+        ["xpath=//a[@id='gnav_746']", "xpath:attributes"],
+        ["xpath=//li[@id='gnav_742_0']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[9]", "xpath:href"],
+        ["xpath=//nav/div/ul/li/div/ul/li/div/ul/li[3]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8265430-20f6-4650-9c8c-407e74d1bd83",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=gnav_746",
+      "targets": [
+        ["id=gnav_746", "id"],
+        ["css=#gnav_746", "css:finder"],
+        ["xpath=//a[@id='gnav_746']", "xpath:attributes"],
+        ["xpath=//li[@id='gnav_742_0']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[9]", "xpath:href"],
+        ["xpath=//nav/div/ul/li/div/ul/li/div/ul/li[3]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61fc4a6e-9bf4-418c-9d4b-77dfe82d8ecc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=.feds-login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In')]", "xpath:link"],
+        ["xpath=//div[@id='gnav_750']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[10]", "xpath:href"],
+        ["xpath=//li[3]/div/ul/li[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70769c9c-c81b-4865-9e8d-ce8d499615dc",
+      "comment": "",
+      "command": "type",
+      "target": "id=EmailPage-EmailField",
+      "targets": [
+        ["id=EmailPage-EmailField", "id"],
+        ["name=username", "name"],
+        ["css=#EmailPage-EmailField", "css:finder"],
+        ["xpath=//input[@id='EmailPage-EmailField']", "xpath:attributes"],
+        ["xpath=//form[@id='EmailForm']/section/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "tonycontinue@gmail.com"
+    }, {
+      "id": "eb4550db-2d28-4dc4-b5f2-160f8bc59b81",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=EmailPage-EmailField",
+      "targets": [
+        ["id=EmailPage-EmailField", "id"],
+        ["name=username", "name"],
+        ["css=#EmailPage-EmailField", "css:finder"],
+        ["xpath=//input[@id='EmailPage-EmailField']", "xpath:attributes"],
+        ["xpath=//form[@id='EmailForm']/section/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3cba316c-4f97-49a0-a3e5-f9fef52d0575",
+      "comment": "",
+      "command": "type",
+      "target": "id=PasswordPage-PasswordField",
+      "targets": [
+        ["id=PasswordPage-PasswordField", "id"],
+        ["name=password", "name"],
+        ["css=#PasswordPage-PasswordField", "css:finder"],
+        ["xpath=//input[@id='PasswordPage-PasswordField']", "xpath:attributes"],
+        ["xpath=//form[@id='PasswordForm']/section/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Ansxogns123"
+    }, {
+      "id": "9f265068-373f-441c-9f5d-4d419df1745c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=PasswordPage-PasswordField",
+      "targets": [
+        ["id=PasswordPage-PasswordField", "id"],
+        ["name=password", "name"],
+        ["css=#PasswordPage-PasswordField", "css:finder"],
+        ["xpath=//input[@id='PasswordPage-PasswordField']", "xpath:attributes"],
+        ["xpath=//form[@id='PasswordForm']/section/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7e14324e-dd84-419a-97ee-34e0e9344c34",
+      "comment": "",
+      "command": "click",
+      "target": "css=#id-61699d4650fd8d8f3b1920bc022ae05d b",
+      "targets": [
+        ["css=#id-61699d4650fd8d8f3b1920bc022ae05d b", "css:finder"],
+        ["xpath=//div[@id='id-61699d4650fd8d8f3b1920bc022ae05d']/div/div/div/h1/b", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/div/div/div/div/div/h1/b", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfe43b76-a521-4224-be54-d8246507ff09",
+      "comment": "",
+      "command": "click",
+      "target": "id=marquee",
+      "targets": [
+        ["id=marquee", "id"],
+        ["css=#marquee", "css:finder"],
+        ["xpath=//div[@id='marquee']", "xpath:attributes"],
+        ["xpath=//div[@id='row0']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "069deec6-6275-4e68-ace1-eb244bbcd7c7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#id-61699d4650fd8d8f3b1920bc022ae05d h1",
+      "targets": [
+        ["css=#id-61699d4650fd8d8f3b1920bc022ae05d h1", "css:finder"],
+        ["xpath=//div[@id='id-61699d4650fd8d8f3b1920bc022ae05d']/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/div/div/div/div/div/h1", "xpath:position"]
+      ],
+      "value": "Welcome back, TAEHOON."
+    }]
+  }],
+  "suites": [{
+    "id": "0f863f98-f33c-44c8-b64b-d86cf3bbbf3a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9194e3a7-8b68-49a8-bb5f-5b96e01c9a6d"]
+  }],
+  "urls": ["https://www.adobe.com/"],
+  "plugins": []
+}

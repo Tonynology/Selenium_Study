@@ -1,0 +1,8 @@
+{
+  "browser": "ch",
+  "url": "https://demo.openemr.io/b/openemr/interface/login/login.php?site=default",
+  "InvalidCredentialTest": [
+    ["admin123", "pass123", "Dutch", "Invalid username and password"],
+    ["johm123", "pass123", "Dutch", "Invalid username and password"],
+  ]
+}
