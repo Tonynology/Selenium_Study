@@ -80,6 +80,12 @@ namespace SeleniumWebDriverConcept
 
             //assignment_3
             driver.Url = "https://www.online.citibank.co.in/";
+
+            if (driver.FindElements(By.XPath("//img[@class='appClose']")).Count > 0)
+            {
+                driver.FindElement(By.XPath("//img[@class='appClose']")).Click();
+            }
+
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(50);
             driver.FindElement(By.XPath("//img[@title='LOGIN NOW']")).Click();
 
@@ -88,6 +94,8 @@ namespace SeleniumWebDriverConcept
 
             driver.SwitchTo().Window(driver.WindowHandles[2]);
             driver.FindElement(By.XPath("//a[text()='Close this window']")).Click();
+
+            driver.Quit();
 
         }
     }

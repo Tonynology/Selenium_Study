@@ -11,6 +11,7 @@ namespace SeleniumNunitConcept
 {
     class DynamicTables
     {
+        //Assignment 4
         [Test]
             public void dynamicTables()
         {
@@ -24,7 +25,7 @@ namespace SeleniumNunitConcept
             select.SelectByText("50");
 
             int pageCount = driver.FindElements(By.XPath("//div[@class='dataTables_paginate paging_simple_numbers']/span/a")).Count;
-            //Console.WriteLine(pageCount); //2
+            //Console.WriteLine("page count is " + pageCount); //2
 
             int totalSalary = 0;
 
@@ -45,6 +46,8 @@ namespace SeleniumNunitConcept
             }
             //How to show with comma?
             Console.WriteLine("$" + totalSalary);
+
+            driver.Quit();
         }
     }
 }

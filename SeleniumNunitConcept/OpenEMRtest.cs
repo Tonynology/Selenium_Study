@@ -11,6 +11,7 @@ namespace SeleniumNunitConcept
 {
     class OpenEMRtest
     {
+        //Assignment 3
         [Test]
         public void AddPatientTest()
         {
@@ -32,8 +33,8 @@ namespace SeleniumNunitConcept
             driver.FindElement(By.XPath("//button[@id='create_patient_btn1']")).Click();
 
             driver.SwitchTo().DefaultContent(); // Go to the main HTML.
-            driver.SwitchTo().Frame(driver.FindElement(By.XPath("//iframe[@name='pat']")));
-            //driver.SwitchTo().Frame("pat");
+            //driver.SwitchTo().Frame(driver.FindElement(By.XPath("//iframe[@name='pat']")));
+            driver.SwitchTo().Frame("pat");
 
             driver.FindElement(By.XPath("//input[@id='form_fname']")).SendKeys("taehoon");
             driver.FindElement(By.XPath("//input[@id='form_lname']")).SendKeys("moon");
@@ -51,6 +52,7 @@ namespace SeleniumNunitConcept
 
             // explicit wait
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(50));
+            //ignores all the exception
             wait.Until(x => x.SwitchTo().Alert());
 
             //// *** Fluent wait ***

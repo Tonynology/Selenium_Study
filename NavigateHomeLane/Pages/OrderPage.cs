@@ -30,9 +30,13 @@ namespace NavigateHomeLane.Pages
         }
         public void ClickOnDashWallTable()
         {
+            IWebElement ele = driver.FindElement(dashWallTableLocator);
             IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
-            js.ExecuteScript("window.scrollTo(0, 700)");        //scrolling down using JavaScript.
-            driver.FindElement(dashWallTableLocator).Click();
+            js.ExecuteScript("arguments[0].click()", ele);
+
+            //IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            //js.ExecuteScript("window.scrollTo(0, 700)");        //scrolling down using JavaScript.
+            //driver.FindElement(dashWallTableLocator).Click();
 
             //var element = driver.FindElement(dashWallTableLocator);
             //Actions actions = new Actions(driver);
